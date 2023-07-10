@@ -1,0 +1,14 @@
+*
+!handler.py
+!u2net/u2netp.onnx
+!u2net/u2net.onnx
+!u2net/u2net_human_seg.onnx
+!u2net/u2net_cloth_seg.onnx
+!rembg
+!setup.py
+!setup.cfg
+!requirements.txt
+!requirements-cpu.txt
+!requirements-gpu.txt
+!versioneer.py
+!README.md
