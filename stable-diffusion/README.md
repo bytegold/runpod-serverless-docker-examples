@@ -10,28 +10,36 @@ This example shows how to create and run a custom Docker image that provides a c
 
 ## Files
 
-* **.dockerignore**
+* **[.dockerignore](.dockerignore)**
 
   Specifies files which are excluded when building the docker image
-* **Dockerfile**
+
+* **[Dockerfile](Dockerfile)**
 
   Docker instructions for assembling the image
-* **handler.py**
+
+* **[handler.py](handler.py)**
 
   Handler that is exposed by the Runpod serverless infrastructure and that handles your Runpod API calls
 
   In this example it exposes access to several functions of the Stable Diffusion web ui API in the image
-* **start.sh**
+
+* **[start.sh](start.sh)**
 
   Script that is started inside the docker image once it is spun up
 
 ## Build instructions
 
 1. change MODELFILE in [Dockerfile](Dockerfile)
+
 1. change MODELFILE in [.dockerignore](.dockerignore)
+
 1. change MODELFILE in [start.sh](start.sh) to your model file (e.g. .ckpt, .safetensors)
+
 1. build docker image
+
 1. push to dockerhub
+
 1. create and start new Runpod serverless instance using the dockerhub image
 
 ---

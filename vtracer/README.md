@@ -12,13 +12,13 @@ This example shows how to create and run a custom Docker image that provides VTr
 
 ## Files
 
-* **.dockerignore**
+* **[.dockerignore](.dockerignore)**
 
   Specifies files which are excluded when building the docker image
-* **Dockerfile**
+* **[Dockerfile](Dockerfile)**
 
   Docker instructions for assembling the image
-* **handler.py**
+* **[handler.py](handler.py)**
 
   Handler that is exposed by the Runpod serverless infrastructure and that handles your Runpod API calls
 
@@ -27,9 +27,12 @@ This example shows how to create and run a custom Docker image that provides VTr
 ## Build instructions
 
 1. download the latest [vtracer-linux](https://github.com/visioncortex/vtracer/releases/) release
-2. build docker image
-3. push to dockerhub
-4. create and start new Runpod serverless instance using the dockerhub image
+
+1. build docker image
+
+1. push to dockerhub
+
+1. create and start new Runpod serverless instance using the dockerhub image
 
 ---
 
